@@ -37,7 +37,7 @@ CREATE TABLE orders (
 );
 
 -- Order Details table
-CREATE TABLE order_details (
+CREATE TABLE order_Details (
     orderdetailid INT PRIMARY KEY,
     order_id INT,
     book_id INT,
