@@ -20,7 +20,8 @@ try:
     else:
         print("Failed to establish a connection to MySQL.")
 
-except Error as e:
+except mysql.connector.Error as e:
+
     # This block catches errors like 'Access denied' or 'Unknown database'
     print(f"Error occurred: {e}")
 
@@ -32,4 +33,4 @@ finally:
              cursor.close()
         
         connection.close()
-        print('MySQL connection closed.') .
+        print('MySQL connection closed.') 
