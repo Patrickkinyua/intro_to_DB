@@ -32,4 +32,4 @@ finally:
              cursor.close()
         
         connection.close()
-        print('MySQL connection closed.')
+        print('MySQL connection closed.') .
